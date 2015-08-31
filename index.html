@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<title>WebApp</title>
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<div class="layout-wrap">
+			<a href="#"><img src="img/logo-netcraft.svg" alt="netcraft" class="logo-netcraft"></a>
+
+			<form class="search-box">
+				<input type="search" name="q" placeholder="search">
+			</form>
+		</div>
+	</header>
+	
+
+	<section class="page-body layout-wrap">
+	<div class="notifications">
+		<p></p>
+	</div>
+
+		<nav>
+			<div class="nav-section">
+				<p>Select Reporting <br>Platform</p>
+
+				<div class="menu">
+					<div class="menu-caption">
+						<p>Choose QS report</p>
+					</div>
+
+					<ul class="action-list">
+						<li><a href="#">link</a></li>
+						<li><a href="#">link</a></li>
+						<li><a href="#">link</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="nav-section">
+				<p>Select <br>Dashboard</p>
+
+				<div class="menu">
+					<div class="menu-caption">
+						<p>Choose dashboard</p>
+					</div>
+
+					<ul class="action-list">
+						<li><a href="#">link</a></li>
+						<li><a href="#">link</a></li>
+						<li><a href="#">link</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="nav-section">
+				<p>Help <br>&amp; Tutorials</p>
+
+				<div class="menu">
+					<div class="menu-caption">
+						<p>Choose guide</p>
+					</div>
+
+					<ul class="action-list">
+						<li><a href="#">link</a></li>
+						<li><a href="#">link</a></li>
+						<li><a href="#">link</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<section class="tabs">
+			<ul>
+				<li><a href="#quick-reports" class="tabs-icon-1">Quick Reports</a></li>
+				<li><a href="#my-folders" class="tabs-icon-2">My Folders</a></li>
+				<li><a href="#my-team-folders" class="tabs-icon-3">My Team Folders</a></li>
+				<li><a href="#public-folders" class="tabs-icon-4">Public Folders</a></li>
+			</ul>
+			<article class="input_form">
+				<section class="menu-links">
+					<article>
+						<p id="firstsite"></p>
+					</article>
+
+					<ul class="links">
+						<li><a href="#" class="site1name">a</a></li>
+						<li><a href="#" class="site2name">b</a></li>
+						<li><a href="#" class="site3name">c</a></li>
+					</ul>
+				</section>
+				<a href="#" id="expand"><img src="img/icons/expand.png" alt="expand" class="expand"></a>
+				<a href="#" id="settings"><img src="img/icons/settings.png" alt="settings" class="settings"></a>
+				<form class="quick-reports-settings">
+					<ul>
+						<li>
+							<p>Report 01:</p>
+							<label for="firstsitename"> Name: </label>
+							<input type="text" name="firstsitename">
+							<label for="firstsitenurl"> URL: </label>
+							<input type="text" name="firstsiteurl">
+						</li>
+						<li>
+							<p>Report 02:</p>
+							<label for="secondsitename"> Name: </label>
+							<input type="text" name="secondsitename">
+							<label for="secondsitenurl"> URL: </label>
+							<input type="text" name="secondsiteurl">
+						</li>
+						<li>
+							<p>Report 03:</p>
+							<label for="thirdsitename"> Name: </label>
+							<input type="text" name="thirdsitename">
+							<label for="thirdsitenurl"> URL: </label>
+							<input type="text" name="thirdsiteurl">
+						</li>
+					</ul>
+					<input type="submit" value="Send" id="send"></input>
+					<input type="button" value="Cancel" id="cancel"></input>
+				</form>
+			</article>
+			<div id="quick-reports" class="tab_on" >
+				<iframe class="iframe1" src=""></iframe>
+			</div>
+
+			<div id="my-folders" class="tab_off">
+			<a href="expand1" id="expand2"><img src="img/icons/expand.png" alt="expand2" class="expand2"></a>
+				<iframe id="exp" src=""></iframe>
+			</div>
+
+			<div id="my-team-folders" class="tab_off">
+				<section class="input_form">
+
+					<section class="menu-links">
+						<article>
+							<p id="secsites"></p>
+						</article>
+
+						<ul class="links">
+							<li><a href="#" class="site4name">a</a></li>
+							<li><a href="#" class="site5name">b</a></li>
+							<li><a href="#" class="site6name">c</a></li>
+						</ul>
+					</section>
+
+					<a href="#" id="expand"><img src="img/icons/expand.png" alt="expand" class="expand"></a>
+					<a href="#" id="settings"><img src="img/icons/settings.png" alt="settings" class="settings"></a>
+					<form class="quick-reports-settings">
+						<ul>
+							<li>
+								<p>Report 04:</p>
+								<label for="forthsitename"> Name: </label>
+								<input type="text" name="forthsitename">
+								<label for="firstsitenurl"> URL: </label>
+								<input type="text" name="forthsiteurl">
+							</li>
+							<li>
+								<p>Report 05:</p>
+								<label for="fifthsitename"> Name: </label>
+								<input type="text" name="fifthsitename">
+								<label for="secondsitenurl"> URL: </label>
+								<input type="text" name="fifthsiteurl">
+							</li>
+							<li>
+								<p>Report 06:</p>
+								<label for="sixthsitename"> Name: </label>
+								<input type="text" name="sixthsitename">
+								<label for="thirdsitenurl"> URL: </label>
+								<input type="text" name="sixthsiteurl">
+							</li>
+						</ul>
+						<input type="submit" value="Send" id="send"></input>
+						<input type="button" value="Cancel" id="cancel"></input>
+					</form>
+				</section>
+				<iframe class="iframe2" src=""></iframe>
+			</div>
+
+			<div id="public-folders" class="tab_off">
+				<a href="#" id="expand3"><img src="img/icons/expand.png" id="exp3" class="expand2"></a>
+				<iframe id="exp2" src=""></iframe>
+			</div>
+				
+		</section>
+	</section>
+
+</body>
+</html>
